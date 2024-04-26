@@ -387,6 +387,7 @@
 "Assets/PSXShaderKit/Demo/SpookyOrbFloat.cs"
 "Assets/PSXShaderKit/Scripts/PSXPostProcessEffect.cs"
 "Assets/PSXShaderKit/Scripts/PSXShaderManager.cs"
+"Assets/Scripts/AudioWalkScript.cs"
 "Assets/Scripts/Data/NoiseData.cs"
 "Assets/Scripts/Data/TerrainData.cs"
 "Assets/Scripts/Data/TextureData.cs"

@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Data\TerrainData.cs" />
     <Compile Include="Assets\Scripts\HideOnPlay.cs" />
+    <Compile Include="Assets\Scripts\AudioWalkScript.cs" />
     <Compile Include="Assets\Scripts\Data\TextureData.cs" />
     <Compile Include="Assets\Scripts\Noise.cs" />
     <Compile Include="Assets\Scripts\MeshGenerator.cs" />
