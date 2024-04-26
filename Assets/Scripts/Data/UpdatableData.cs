@@ -8,12 +8,20 @@ public class UpdatableData : ScriptableObject {
 
 	protected virtual void OnValidate() {
 		if (autoUpdate) {
-			UnityEditor.EditorApplication.update += NotifyOfUpdatedValues;
+			#if UNITY_EDITOR
+				UnityEditor.EditorApplication.update += NotifyOfUpdatedValues;
+			#else
+				return;
+			#endif
 		}
 	}
 
 	public void NotifyOfUpdatedValues() {
-		UnityEditor.EditorApplication.update -= NotifyOfUpdatedValues;
+		#if UNITY_EDITOR
+			UnityEditor.EditorApplication.update -= NotifyOfUpdatedValues;
+		#else
+			return;
+		#endif
 		if (OnValuesUpdated != null) {
 			OnValuesUpdated ();
 		}
